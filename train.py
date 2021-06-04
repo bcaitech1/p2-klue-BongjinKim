@@ -144,7 +144,7 @@ def train():
             seed = config.seed,
             fp16=True,
             dataloader_num_workers=4,
-            output_dir= f'./results/k-fold-{idx}',          # output directory
+            output_dir= f'./results',          # output directory
             save_total_limit=1,              # number of total save model.
             save_steps=100,                 # model saving step.
             num_train_epochs=config.epochs,              # total number of training epochs
@@ -155,7 +155,7 @@ def train():
             weight_decay=0.01,               # strength of weight decay
             logging_steps=100,              # log saving step.
             evaluation_strategy='steps',
-            eval_steps = 100,            
+            eval_steps = 100,
             report_to = 'wandb',
             load_best_model_at_end = True,
             metric_for_best_model = 'accuracy',
