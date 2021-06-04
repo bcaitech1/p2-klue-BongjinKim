@@ -1,5 +1,4 @@
 # 문장 내 개체간 관계 추출
-## Goal
 관계 추출(Relation Extraction)은 문장의 단어(Entity)에 대한 속성과 관계를 예측하는 문제입니다.
 
 - `input` : sentence, entity1, entity2 의 정보를 입력으로 사용 합니다.
