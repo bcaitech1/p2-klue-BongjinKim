@@ -75,8 +75,11 @@ python inference.py --model_dir=./results/checkpoint-500
 |kobert|params not tuned|55.0|
 |koelectra|params not tuned|67.7|
 |bert-kor-base|params not tuned|71.8|
-|bert-kor-base|params tuned|adsf|
-|asdf|asdf|adsf|
+|bert-kor-base|params tuned with BackTranslation|72.4|
+|bert-kor-base|params tuned|74.8|
+|bert-kor-base|params tuned, with NER|75.4|
+|xml-roberta-large|params not tuned|78|
+|xml-roberta-large|params tuned, with NER|79.4|
 
 ### References
 - BERT - https://arxiv.org/abs/1810.04805
